@@ -1,0 +1,236 @@
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header{
+      background-color: #3d0066;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      }
+    section {
+      padding: 20px;
+      text-align: center;
+      background-image: url('sfondo.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    
+    footer {
+      background-color: #3d0066;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
+
+    #trasparenza{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+  #commenti{
+    width: 400px;
+    background-color: white;
+    position: relative;
+    height: 700px;
+  }
+
+  #link{
+    margin-left: 0.5%;
+    color: white;
+  }
+
+
+  #album-view {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.movie-summary {
+  flex-grow: 1;
+}
+
+.movie-summary p {
+  margin-bottom: 10px;
+}
+
+.movie-plot {
+  margin-top: 20px;
+}
+
+.movie-plot h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.movie-plot p {
+  line-height: 1.5;
+}
+
+h4{
+  display: inline;
+}
+
+.bottone{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+
+}
+
+#cliccabile{
+  text-align: right;
+  background-color: #673ab7;
+  color: white;
+  padding: 1%;
+  border-radius: 50px 0 0 50px;
+  border-bottom: 3px solid #b84dff ;
+}
+
+
+#cliccabile.colore{
+  background-color: #b84dff;
+  border-bottom: 3px solid #673ab7;
+}
+
+
+    #commenti h1 {
+      text-align: center;
+    }
+
+    .comment-section {
+      border: 1px solid #ccc;
+      width: 90%;
+
+    }
+
+    .comment-form {
+      text-align: center;
+      position: absolute;
+      bottom: 5px;
+      background-color: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .comment span{
+      display: flex;
+      text-align: center;
+      align-items: center;
+      text-align: left;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+    .button{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      height: 5%;
+      padding: 2%;
+    }
+
+    .data{
+      margin-right: 2%;
+    }
+
+    #comment-input{
+      overflow: auto;
+      width: 100%;
+      height: 60px;
+    }
+
+    #comments-list{
+      height: 600px;
+      overflow: auto;
+    }
+
+
+@media (max-width:600px){
+   #commenti{
+    width: 98%;
+    border-radius: 2%;
+    margin-left: 1%;
+    height: 400px;
+  }
+  #album-view {
+  width: 90%;
+  margin-bottom: 10%;
+}
+.comment-section {
+  width: 100%;
+  overflow: auto;
+}
+#trasparenza{
+  flex-direction: column;
+}
+
+.comment-form{
+  margin-bottom: 5%;
+}
+#comments-list{
+      height: 200px;
+      overflow: auto;
+    }
+
+    .comment-section {
+      border: 0px;
+      width: 90%;
+
+    }
+}
